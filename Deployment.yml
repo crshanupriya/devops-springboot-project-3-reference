@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
  name: productsapideployment
 spec:
- replicas: 1
+ replicas: 2
  selector:
    matchLabels:
      app: products
@@ -16,7 +16,7 @@ spec:
   spec:
     containers:
     - name: productscontainer
-      image: vinodses/products
+      image: shanupriyacr/mysbapp
       ports:
       - containerPort: 8080
 ---
